@@ -3,110 +3,225 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Politique de confidentialite - SiyarTy</title>
+    <title>Politique de confidentialite | Privacy Policy | سياسة الخصوصية - SiyarTy</title>
     <style>
       :root {
-        --bg: #f5f7fb;
+        --bg: #f4f7fb;
         --card: #ffffff;
-        --text: #1f2937;
-        --muted: #5b6474;
+        --card-alt: #f9fbff;
+        --text: #162033;
+        --muted: #61708a;
         --accent: #f5a623;
-        --border: #d9e1ee;
+        --accent-soft: rgba(245, 166, 35, 0.14);
+        --border: #d8e1ef;
+        --shadow: 0 12px 32px rgba(9, 19, 36, 0.08);
       }
 
       * {
         box-sizing: border-box;
       }
 
+      html {
+        scroll-behavior: smooth;
+      }
+
       body {
         margin: 0;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(180deg, #0e1625 0, #18243b 240px, var(--bg) 240px);
+        background: linear-gradient(180deg, #0e1625 0, #18243b 260px, var(--bg) 260px);
         color: var(--text);
       }
 
       .wrap {
-        max-width: 900px;
+        max-width: 1080px;
         margin: 0 auto;
-        padding: 32px 20px 48px;
+        padding: 36px 20px 56px;
       }
 
       .hero {
         color: #fff;
-        margin-bottom: 20px;
+        margin-bottom: 22px;
       }
 
       .badge {
         display: inline-block;
         padding: 8px 14px;
         border-radius: 999px;
-        background: rgba(245, 166, 35, 0.16);
+        background: var(--accent-soft);
         color: #ffd78b;
         font-weight: 700;
-        letter-spacing: 0.02em;
+        letter-spacing: 0.03em;
       }
 
       h1 {
-        margin: 14px 0 8px;
+        margin: 16px 0 10px;
         font-size: 34px;
         line-height: 1.15;
       }
 
       .subtitle {
         margin: 0;
-        color: #d7deea;
+        color: #d6dfeb;
         font-size: 16px;
+        line-height: 1.6;
       }
 
-      .card {
+      .language-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      .language-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 120px;
+        padding: 10px 14px;
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.08);
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+      }
+
+      .language-link:hover {
+        background: rgba(255, 255, 255, 0.14);
+      }
+
+      .page-card {
         background: var(--card);
         border: 1px solid var(--border);
-        border-radius: 20px;
-        padding: 28px 24px;
-        box-shadow: 0 10px 30px rgba(7, 18, 39, 0.08);
+        border-radius: 24px;
+        box-shadow: var(--shadow);
+        overflow: hidden;
       }
 
-      h2 {
-        margin-top: 28px;
-        margin-bottom: 10px;
-        font-size: 22px;
+      .intro {
+        padding: 24px 24px 8px;
+        background: linear-gradient(180deg, #ffffff 0, var(--card-alt) 100%);
+        border-bottom: 1px solid var(--border);
       }
 
-      h2:first-child {
-        margin-top: 0;
+      .intro p {
+        margin: 0 0 16px;
       }
 
-      p,
-      li {
-        line-height: 1.7;
-        font-size: 16px;
+      .section-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0;
+      }
+
+      .locale-section {
+        padding: 26px 24px 28px;
+        border-right: 1px solid var(--border);
+      }
+
+      .locale-section:last-child {
+        border-right: 0;
+      }
+
+      .locale-section h2 {
+        margin: 0 0 18px;
+        font-size: 26px;
+      }
+
+      .locale-section h3 {
+        margin: 24px 0 10px;
+        font-size: 18px;
+        line-height: 1.35;
+      }
+
+      .locale-section p,
+      .locale-section li {
+        margin: 0;
+        font-size: 15px;
+        line-height: 1.75;
         color: var(--text);
       }
 
-      ul {
+      .locale-section p + p {
+        margin-top: 12px;
+      }
+
+      .locale-section ul {
         margin: 10px 0 0;
         padding-left: 22px;
       }
 
-      .muted {
-        color: var(--muted);
+      .locale-section li + li {
+        margin-top: 6px;
+      }
+
+      .locale-label {
+        display: inline-flex;
+        align-items: center;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: #eef3fb;
+        color: #24324a;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.02em;
+        margin-bottom: 14px;
+      }
+
+      .locale-section.rtl {
+        direction: rtl;
+        text-align: right;
+      }
+
+      .locale-section.rtl ul {
+        padding-left: 0;
+        padding-right: 22px;
       }
 
       .foot {
-        margin-top: 24px;
-        padding-top: 18px;
+        padding: 18px 24px 22px;
         border-top: 1px solid var(--border);
         color: var(--muted);
         font-size: 14px;
+        line-height: 1.7;
+        background: var(--card-alt);
+      }
+
+      @media (max-width: 980px) {
+        .section-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .locale-section {
+          border-right: 0;
+          border-bottom: 1px solid var(--border);
+        }
+
+        .locale-section:last-child {
+          border-bottom: 0;
+        }
       }
 
       @media (max-width: 640px) {
+        .wrap {
+          padding: 26px 14px 40px;
+        }
+
         h1 {
           font-size: 28px;
         }
 
-        .card {
-          padding: 22px 18px;
+        .intro,
+        .locale-section,
+        .foot {
+          padding-left: 18px;
+          padding-right: 18px;
+        }
+
+        .language-link {
+          min-width: 0;
+          flex: 1 1 0;
         }
       }
     </style>
@@ -115,87 +230,198 @@
     <div class="wrap">
       <header class="hero">
         <div class="badge">SiyarTy</div>
-        <h1>Politique de confidentialite</h1>
-        <p class="subtitle">Derniere mise a jour : 29/03/2026</p>
+        <h1>Politique de confidentialite | Privacy Policy | سياسة الخصوصية</h1>
+        <p class="subtitle">
+          Derniere mise a jour / Last update / آخر تحديث : 03/04/2026
+        </p>
+        <nav class="language-nav" aria-label="Languages">
+          <a class="language-link" href="#fr">Francais</a>
+          <a class="language-link" href="#en">English</a>
+          <a class="language-link" href="#ar">العربية</a>
+        </nav>
       </header>
 
-      <main class="card">
-        <p>
-          SiyarTy est une application de gestion de vehicules qui permet de suivre les documents,
-          le carburant, les depenses, les planifications preventives et les pieces jointes
-          associees.
-        </p>
+      <main class="page-card">
+        <section class="intro">
+          <p>
+            Cette page presente la politique de confidentialite de SiyarTy en francais, en anglais et en arabe.
+          </p>
+          <p>
+            This page presents the SiyarTy privacy policy in French, English and Arabic.
+          </p>
+          <p dir="rtl" style="text-align: right;">
+            تعرض هذه الصفحة سياسة خصوصية SiyarTy بالفرنسية والإنجليزية والعربية.
+          </p>
+        </section>
 
-        <h2>Donnees collectees</h2>
-        <p>L'application peut traiter les donnees suivantes :</p>
-        <ul>
-          <li>informations de compte necessaires a l'authentification</li>
-          <li>informations sur les vehicules</li>
-          <li>documents et pieces jointes ajoutes par l'utilisateur</li>
-          <li>photos prises par l'utilisateur pour illustrer un vehicule, un document ou lire un compteur</li>
-          <li>historiques de carburant, depenses et planifications</li>
-        </ul>
+        <div class="section-grid">
+          <section class="locale-section" id="fr">
+            <div class="locale-label">Francais</div>
+            <h2>Politique de confidentialite</h2>
 
-        <h2>Permissions utilisees</h2>
-        <h2>Camera</h2>
-        <p>La permission <strong>CAMERA</strong> est utilisee uniquement lorsque l'utilisateur choisit de :</p>
-        <ul>
-          <li>prendre une photo d'un vehicule</li>
-          <li>prendre une photo d'un document ou d'une piece jointe</li>
-          <li>prendre une photo pour lire un compteur</li>
-        </ul>
-        <p>L'application n'utilise pas la camera en arriere-plan.</p>
+            <p>
+              SiyarTy est une application de suivi de vehicules qui permet de gerer les documents, le carburant,
+              les depenses, les planifications preventives et les pieces jointes associees.
+            </p>
 
-        <h2>Photos et images</h2>
-        <p>
-          La permission d'acces aux images est utilisee uniquement pour permettre a l'utilisateur
-          de selectionner une image depuis sa galerie.
-        </p>
+            <h3>Donnees traitees</h3>
+            <p>L'application peut traiter les donnees suivantes :</p>
+            <ul>
+              <li>informations de compte necessaires a l'authentification et a la gestion du profil</li>
+              <li>informations sur les vehicules enregistres par l'utilisateur</li>
+              <li>documents, photos et pieces jointes ajoutes par l'utilisateur</li>
+              <li>historiques de carburant, depenses et planifications preventives</li>
+            </ul>
 
-        <h2>Utilisation des donnees</h2>
-        <p>Les donnees sont utilisees pour :</p>
-        <ul>
-          <li>afficher les informations du vehicule</li>
-          <li>stocker les justificatifs et pieces jointes</li>
-          <li>calculer les indicateurs de suivi</li>
-          <li>generer des alertes et rappels</li>
-        </ul>
-        <p>Les donnees ne sont pas revendues a des tiers.</p>
+            <h3>Permissions utilisees</h3>
+            <p>
+              La permission <strong>CAMERA</strong> est utilisee uniquement lorsque l'utilisateur choisit de prendre
+              une photo pour un vehicule, un document, une piece jointe ou une lecture de compteur.
+            </p>
+            <p>
+              L'acces aux images est utilise uniquement lorsque l'utilisateur choisit une image depuis sa galerie.
+            </p>
 
-        <h2>Partage des donnees</h2>
-        <p>
-          Les donnees ne sont partagees qu'avec les services necessaires au fonctionnement de
-          l'application et a l'hebergement de l'API utilisee par SiyarTy.
-        </p>
+            <h3>Finalites</h3>
+            <ul>
+              <li>afficher et organiser les informations de suivi du vehicule</li>
+              <li>stocker les justificatifs et pieces jointes</li>
+              <li>calculer les indicateurs utiles a l'utilisateur</li>
+              <li>generer des rappels, alertes et notifications si le service les active</li>
+            </ul>
 
-        <h2>Conservation et securite</h2>
-        <p>
-          Les donnees sont conservees tant qu'elles sont necessaires au fonctionnement du service
-          ou jusqu'a suppression par l'utilisateur ou l'administrateur du service.
-        </p>
-        <p>
-          Des mesures techniques raisonnables sont appliquees pour proteger les donnees contre
-          l'acces non autorise.
-        </p>
+            <h3>Partage</h3>
+            <p>
+              Les donnees ne sont pas revendues. Elles ne sont partagees qu'avec les services necessaires a
+              l'hebergement, au fonctionnement technique et a la securisation de SiyarTy.
+            </p>
 
-        <h2>Choix de l'utilisateur</h2>
-        <p>L'utilisateur peut :</p>
-        <ul>
-          <li>ne pas utiliser les fonctions photo</li>
-          <li>supprimer certaines donnees depuis l'application selon les fonctions disponibles</li>
-          <li>demander la suppression de ses donnees selon les modalites du service</li>
-        </ul>
+            <h3>Conservation et securite</h3>
+            <p>
+              Les donnees sont conservees tant qu'elles sont necessaires au fonctionnement du service ou jusqu'a
+              leur suppression selon les regles du service. Des mesures techniques raisonnables sont appliquees
+              pour limiter les acces non autorises.
+            </p>
 
-        <h2>Contact</h2>
-        <p>
-          Pour toute question relative a la confidentialite, contactez l'editeur de l'application
-          SiyarTy via le canal de support associe a votre service.
-        </p>
+            <h3>Droits et contact</h3>
+            <p>
+              L'utilisateur peut demander des informations complementaires ou la suppression de ses donnees via le
+              canal de support associe au service SiyarTy.
+            </p>
+          </section>
 
-        <div class="foot">
-          <div>Application : SiyarTy</div>
-          <div class="muted">Cette page peut etre utilisee comme URL de politique de confidentialite dans Google Play Console.</div>
+          <section class="locale-section" id="en">
+            <div class="locale-label">English</div>
+            <h2>Privacy Policy</h2>
+
+            <p>
+              SiyarTy is a vehicle tracking application used to manage documents, fuel records, expenses,
+              preventive planning and related attachments.
+            </p>
+
+            <h3>Data processed</h3>
+            <p>The application may process the following data:</p>
+            <ul>
+              <li>account information required for authentication and profile management</li>
+              <li>vehicle information entered by the user</li>
+              <li>documents, photos and attachments uploaded by the user</li>
+              <li>fuel history, expense history and preventive planning records</li>
+            </ul>
+
+            <h3>Permissions used</h3>
+            <p>
+              The <strong>CAMERA</strong> permission is used only when the user chooses to take a picture for a
+              vehicle, a document, an attachment or an odometer reading.
+            </p>
+            <p>
+              Access to images is used only when the user chooses an image from the device gallery.
+            </p>
+
+            <h3>Purposes</h3>
+            <ul>
+              <li>display and organize vehicle follow-up information</li>
+              <li>store supporting files and attachments</li>
+              <li>calculate indicators useful to the user</li>
+              <li>generate reminders, alerts and notifications when enabled by the service</li>
+            </ul>
+
+            <h3>Sharing</h3>
+            <p>
+              Data is not sold. It is shared only with services required for hosting, technical operation and
+              security of SiyarTy.
+            </p>
+
+            <h3>Retention and security</h3>
+            <p>
+              Data is kept as long as needed for the service or until deletion according to the service rules.
+              Reasonable technical safeguards are applied to reduce unauthorized access.
+            </p>
+
+            <h3>Rights and contact</h3>
+            <p>
+              Users may request additional information or deletion of their data through the support channel linked
+              to the SiyarTy service.
+            </p>
+          </section>
+
+          <section class="locale-section rtl" id="ar">
+            <div class="locale-label">العربية</div>
+            <h2>سياسة الخصوصية</h2>
+
+            <p>
+              SiyarTy هو تطبيق لمتابعة المركبات يتيح إدارة الوثائق والوقود والمصاريف والتخطيط الوقائي والمرفقات المرتبطة بها.
+            </p>
+
+            <h3>البيانات التي تتم معالجتها</h3>
+            <p>قد يعالج التطبيق البيانات التالية:</p>
+            <ul>
+              <li>بيانات الحساب اللازمة للمصادقة وإدارة الملف الشخصي</li>
+              <li>بيانات المركبات التي يقوم المستخدم بإدخالها</li>
+              <li>الوثائق والصور والمرفقات التي يضيفها المستخدم</li>
+              <li>سجل الوقود والمصاريف وعمليات التخطيط الوقائي</li>
+            </ul>
+
+            <h3>الأذونات المستخدمة</h3>
+            <p>
+              يتم استخدام إذن <strong>الكاميرا</strong> فقط عندما يختار المستخدم التقاط صورة لمركبة أو وثيقة أو مرفق
+              أو لقراءة العداد.
+            </p>
+            <p>
+              يتم استخدام الوصول إلى الصور فقط عندما يختار المستخدم صورة من معرض الهاتف.
+            </p>
+
+            <h3>أغراض الاستخدام</h3>
+            <ul>
+              <li>عرض وتنظيم معلومات متابعة المركبة</li>
+              <li>حفظ المستندات الداعمة والمرفقات</li>
+              <li>حساب المؤشرات المفيدة للمستخدم</li>
+              <li>إنشاء تذكيرات وتنبيهات وإشعارات عند تفعيلها داخل الخدمة</li>
+            </ul>
+
+            <h3>مشاركة البيانات</h3>
+            <p>
+              لا يتم بيع البيانات. ولا تتم مشاركتها إلا مع الخدمات الضرورية لاستضافة SiyarTy وتشغيله وحمايته تقنيا.
+            </p>
+
+            <h3>الاحتفاظ بالبيانات والأمن</h3>
+            <p>
+              يتم الاحتفاظ بالبيانات طوال المدة اللازمة لتشغيل الخدمة أو إلى حين حذفها وفق قواعد الخدمة، مع تطبيق
+              إجراءات تقنية معقولة للحد من الوصول غير المصرح به.
+            </p>
+
+            <h3>الحقوق والتواصل</h3>
+            <p>
+              يمكن للمستخدم طلب معلومات إضافية أو حذف بياناته عبر قناة الدعم المرتبطة بخدمة SiyarTy.
+            </p>
+          </section>
         </div>
+
+        <footer class="foot">
+          <div>Application: SiyarTy</div>
+          <div>
+            Cette page peut etre utilisee comme URL publique de politique de confidentialite dans Google Play Console.
+          </div>
+        </footer>
       </main>
     </div>
   </body>

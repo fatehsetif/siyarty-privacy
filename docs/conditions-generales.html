@@ -1,112 +1,226 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Conditions Generales d'Utilisation - SiyarTy</title>
+    <title>Conditions Generales | Terms of Use | الشروط العامة - SiyarTy</title>
     <style>
       :root {
-        --bg: #f5f7fb;
+        --bg: #f4f7fb;
         --card: #ffffff;
-        --text: #1f2937;
-        --muted: #5b6474;
+        --card-alt: #f9fbff;
+        --text: #162033;
+        --muted: #61708a;
         --accent: #f5a623;
-        --border: #d9e1ee;
+        --accent-soft: rgba(245, 166, 35, 0.14);
+        --border: #d8e1ef;
+        --shadow: 0 12px 32px rgba(9, 19, 36, 0.08);
       }
 
       * {
         box-sizing: border-box;
       }
 
+      html {
+        scroll-behavior: smooth;
+      }
+
       body {
         margin: 0;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(180deg, #0e1625 0, #18243b 240px, var(--bg) 240px);
+        background: linear-gradient(180deg, #0e1625 0, #18243b 260px, var(--bg) 260px);
         color: var(--text);
       }
 
       .wrap {
-        max-width: 900px;
+        max-width: 1080px;
         margin: 0 auto;
-        padding: 32px 20px 48px;
+        padding: 36px 20px 56px;
       }
 
       .hero {
         color: #fff;
-        margin-bottom: 20px;
+        margin-bottom: 22px;
       }
 
       .badge {
         display: inline-block;
         padding: 8px 14px;
         border-radius: 999px;
-        background: rgba(245, 166, 35, 0.16);
+        background: var(--accent-soft);
         color: #ffd78b;
         font-weight: 700;
-        letter-spacing: 0.02em;
+        letter-spacing: 0.03em;
       }
 
       h1 {
-        margin: 14px 0 8px;
+        margin: 16px 0 10px;
         font-size: 34px;
         line-height: 1.15;
       }
 
       .subtitle {
         margin: 0;
-        color: #d7deea;
+        color: #d6dfeb;
         font-size: 16px;
+        line-height: 1.6;
       }
 
-      .card {
+      .language-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      .language-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 120px;
+        padding: 10px 14px;
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.08);
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+      }
+
+      .language-link:hover {
+        background: rgba(255, 255, 255, 0.14);
+      }
+
+      .page-card {
         background: var(--card);
         border: 1px solid var(--border);
-        border-radius: 20px;
-        padding: 28px 24px;
-        box-shadow: 0 10px 30px rgba(7, 18, 39, 0.08);
+        border-radius: 24px;
+        box-shadow: var(--shadow);
+        overflow: hidden;
       }
 
-      h2 {
-        margin-top: 28px;
-        margin-bottom: 10px;
-        font-size: 22px;
+      .intro {
+        padding: 24px 24px 8px;
+        background: linear-gradient(180deg, #ffffff 0, var(--card-alt) 100%);
+        border-bottom: 1px solid var(--border);
       }
 
-      h2:first-child {
-        margin-top: 0;
+      .intro p {
+        margin: 0 0 16px;
       }
 
-      p,
-      li {
-        line-height: 1.7;
-        font-size: 16px;
+      .section-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .locale-section {
+        padding: 26px 24px 28px;
+        border-right: 1px solid var(--border);
+      }
+
+      .locale-section:last-child {
+        border-right: 0;
+      }
+
+      .locale-label {
+        display: inline-flex;
+        align-items: center;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: #eef3fb;
+        color: #24324a;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.02em;
+        margin-bottom: 14px;
+      }
+
+      .locale-section h2 {
+        margin: 0 0 18px;
+        font-size: 26px;
+      }
+
+      .locale-section h3 {
+        margin: 24px 0 10px;
+        font-size: 18px;
+        line-height: 1.35;
+      }
+
+      .locale-section p,
+      .locale-section li {
+        margin: 0;
+        font-size: 15px;
+        line-height: 1.75;
         color: var(--text);
       }
 
-      ul {
+      .locale-section p + p {
+        margin-top: 12px;
+      }
+
+      .locale-section ul {
         margin: 10px 0 0;
         padding-left: 22px;
       }
 
-      .muted {
-        color: var(--muted);
+      .locale-section li + li {
+        margin-top: 6px;
+      }
+
+      .locale-section.rtl {
+        direction: rtl;
+        text-align: right;
+      }
+
+      .locale-section.rtl ul {
+        padding-left: 0;
+        padding-right: 22px;
       }
 
       .foot {
-        margin-top: 24px;
-        padding-top: 18px;
+        padding: 18px 24px 22px;
         border-top: 1px solid var(--border);
         color: var(--muted);
         font-size: 14px;
+        line-height: 1.7;
+        background: var(--card-alt);
+      }
+
+      @media (max-width: 980px) {
+        .section-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .locale-section {
+          border-right: 0;
+          border-bottom: 1px solid var(--border);
+        }
+
+        .locale-section:last-child {
+          border-bottom: 0;
+        }
       }
 
       @media (max-width: 640px) {
+        .wrap {
+          padding: 26px 14px 40px;
+        }
+
         h1 {
           font-size: 28px;
         }
 
-        .card {
-          padding: 22px 18px;
+        .intro,
+        .locale-section,
+        .foot {
+          padding-left: 18px;
+          padding-right: 18px;
+        }
+
+        .language-link {
+          min-width: 0;
+          flex: 1 1 0;
         }
       }
     </style>
@@ -115,121 +229,211 @@
     <div class="wrap">
       <header class="hero">
         <div class="badge">SiyarTy</div>
-        <h1>Conditions Generales d'Utilisation</h1>
-        <p class="subtitle">Derniere mise a jour : 29/03/2026</p>
+        <h1>Conditions Generales | Terms of Use | الشروط العامة</h1>
+        <p class="subtitle">
+          Derniere mise a jour / Last update / آخر تحديث : 03/04/2026
+        </p>
+        <nav class="language-nav" aria-label="Languages">
+          <a class="language-link" href="#fr">Francais</a>
+          <a class="language-link" href="#en">English</a>
+          <a class="language-link" href="#ar">العربية</a>
+        </nav>
       </header>
 
-      <main class="card">
-        <p>
-          Les presentes Conditions Generales d'Utilisation definissent les regles d'acces
-          et d'utilisation de l'application SiyarTy.
-        </p>
+      <main class="page-card">
+        <section class="intro">
+          <p>
+            Cette page regroupe les conditions generales d'utilisation de SiyarTy en francais, en anglais et en arabe.
+          </p>
+          <p>
+            This page contains the SiyarTy terms of use in French, English and Arabic.
+          </p>
+          <p dir="rtl" style="text-align: right;">
+            تحتوي هذه الصفحة على الشروط العامة لاستخدام SiyarTy بالفرنسية والإنجليزية والعربية.
+          </p>
+        </section>
 
-        <h2>1. Objet</h2>
-        <p>
-          SiyarTy est une application de gestion de vehicules permettant notamment de suivre
-          les documents, le carburant, les depenses, les planifications preventives et les
-          pieces jointes associees.
-        </p>
+        <div class="section-grid">
+          <section class="locale-section" id="fr">
+            <div class="locale-label">Francais</div>
+            <h2>Conditions Generales d'Utilisation</h2>
 
-        <h2>2. Acceptation</h2>
-        <p>
-          En utilisant SiyarTy, l'utilisateur accepte les presentes conditions. Si l'utilisateur
-          n'accepte pas ces conditions, il ne doit pas utiliser l'application.
-        </p>
+            <p>
+              Les presentes conditions definissent les regles d'acces et d'utilisation de l'application SiyarTy.
+            </p>
 
-        <h2>3. Compte utilisateur</h2>
-        <p>
-          Certaines fonctionnalites de SiyarTy necessitent la creation d'un compte ou
-          l'utilisation d'un acces fourni par un service associe.
-        </p>
-        <ul>
-          <li>l'utilisateur est responsable de l'exactitude des informations fournies</li>
-          <li>l'utilisateur doit proteger la confidentialite de ses identifiants</li>
-          <li>l'utilisateur reste responsable de l'utilisation de son compte</li>
-        </ul>
+            <h3>1. Objet</h3>
+            <p>
+              SiyarTy est une application de gestion de vehicules permettant de suivre notamment les documents,
+              le carburant, les depenses, les planifications preventives et les pieces jointes associees.
+            </p>
 
-        <h2>4. Utilisation autorisee</h2>
-        <p>L'utilisateur s'engage a utiliser SiyarTy de maniere licite et conforme a sa finalite.</p>
-        <ul>
-          <li>ne pas tenter d'acceder sans autorisation a des comptes ou donnees tiers</li>
-          <li>ne pas utiliser l'application pour stocker des contenus illicites</li>
-          <li>ne pas perturber le fonctionnement normal du service</li>
-          <li>ne pas contourner les mesures de securite mises en place</li>
-        </ul>
+            <h3>2. Acceptation</h3>
+            <p>
+              En utilisant SiyarTy, l'utilisateur accepte les presentes conditions. S'il ne les accepte pas,
+              il ne doit pas utiliser l'application.
+            </p>
 
-        <h2>5. Donnees et contenus ajoutes par l'utilisateur</h2>
-        <p>
-          L'utilisateur reste responsable des informations, documents, images et autres contenus
-          qu'il ajoute dans l'application et garantit disposer des droits necessaires sur ces contenus.
-        </p>
+            <h3>3. Compte utilisateur</h3>
+            <ul>
+              <li>l'utilisateur est responsable de l'exactitude des informations fournies</li>
+              <li>l'utilisateur doit proteger la confidentialite de ses identifiants</li>
+              <li>l'utilisateur reste responsable de l'usage effectue avec son compte</li>
+            </ul>
 
-        <h2>6. Disponibilite du service</h2>
-        <p>
-          L'editeur s'efforce d'assurer une disponibilite raisonnable du service, sans garantie
-          d'absence d'interruption, de retard ou d'erreur.
-        </p>
-        <p>
-          Des operations de maintenance, de mise a jour ou des incidents techniques peuvent
-          affecter temporairement l'acces au service.
-        </p>
+            <h3>4. Utilisation autorisee</h3>
+            <ul>
+              <li>ne pas tenter d'acceder sans autorisation a des comptes ou donnees tiers</li>
+              <li>ne pas utiliser l'application pour des contenus illicites</li>
+              <li>ne pas perturber le fonctionnement normal du service</li>
+              <li>ne pas contourner les mesures de securite mises en place</li>
+            </ul>
 
-        <h2>7. Fonctionnalites et evolutions</h2>
-        <p>
-          Les fonctionnalites de SiyarTy peuvent etre modifiees, ameliorees, suspendues ou retirees
-          a tout moment afin d'assurer l'evolution, la securite ou la maintenance du service.
-        </p>
+            <h3>5. Responsabilite</h3>
+            <p>
+              SiyarTy est un outil d'aide au suivi vehicule. L'utilisateur reste responsable des informations saisies,
+              du suivi effectif de ses echeances et du respect de ses obligations administratives et techniques.
+            </p>
 
-        <h2>8. Responsabilite</h2>
-        <p>SiyarTy est un outil d'aide au suivi vehicule.</p>
-        <ul>
-          <li>l'utilisateur reste responsable de la verification des informations saisies</li>
-          <li>l'utilisateur reste responsable du respect de ses obligations administratives et techniques</li>
-          <li>l'utilisateur reste responsable du suivi effectif de ses echeances, controles et entretiens</li>
-        </ul>
-        <p>
-          L'editeur ne saurait etre responsable des dommages indirects, des pertes de donnees,
-          ou des consequences liees a une utilisation incorrecte de l'application ou a des informations
-          erronees renseignees par l'utilisateur.
-        </p>
+            <h3>6. Disponibilite et evolution</h3>
+            <p>
+              Le service peut etre interrompu, modifie, ameliore ou suspendu temporairement pour maintenance,
+              securite ou evolution technique.
+            </p>
 
-        <h2>9. Suspension ou suppression d'acces</h2>
-        <p>
-          L'acces au service peut etre suspendu ou limite en cas de non-respect des presentes
-          conditions, d'usage abusif, de risque de securite ou de necessite technique.
-        </p>
+            <h3>7. Donnees personnelles</h3>
+            <p>
+              Le traitement des donnees personnelles est encadre par la Politique de Confidentialite de SiyarTy.
+            </p>
 
-        <h2>10. Propriete intellectuelle</h2>
-        <p>
-          L'application SiyarTy, son interface, ses elements graphiques, son organisation et ses
-          contenus proteges restent la propriete de leur titulaire respectif.
-        </p>
-        <p>
-          Sauf autorisation expresse, aucune reproduction, extraction ou reutilisation non autorisee
-          n'est permise.
-        </p>
+            <h3>8. Contact</h3>
+            <p>
+              Pour toute question relative a l'utilisation du service, l'utilisateur peut contacter le support associe
+              a SiyarTy.
+            </p>
+          </section>
 
-        <h2>11. Protection des donnees</h2>
-        <p>
-          Le traitement des donnees personnelles est encadre par la Politique de Confidentialite de SiyarTy.
-        </p>
+          <section class="locale-section" id="en">
+            <div class="locale-label">English</div>
+            <h2>Terms of Use</h2>
 
-        <h2>12. Modification des conditions</h2>
-        <p>
-          Les presentes conditions peuvent etre mises a jour a tout moment. La version la plus recente
-          fait foi a compter de sa publication.
-        </p>
+            <p>
+              These terms define the rules for accessing and using the SiyarTy application.
+            </p>
 
-        <h2>13. Contact</h2>
-        <p>
-          Pour toute question relative a l'utilisation de l'application, contactez l'editeur de
-          SiyarTy via le canal de support associe au service.
-        </p>
+            <h3>1. Purpose</h3>
+            <p>
+              SiyarTy is a vehicle management application designed to track documents, fuel, expenses,
+              preventive planning and related attachments.
+            </p>
 
-        <div class="foot">
-          <div>Application : SiyarTy</div>
-          <div class="muted">Cette page peut etre publiee avec GitHub Pages comme document de conditions d'utilisation.</div>
+            <h3>2. Acceptance</h3>
+            <p>
+              By using SiyarTy, the user accepts these terms. If the user does not accept them, the application
+              must not be used.
+            </p>
+
+            <h3>3. User account</h3>
+            <ul>
+              <li>the user is responsible for the accuracy of the information provided</li>
+              <li>the user must keep login credentials confidential</li>
+              <li>the user remains responsible for all activity performed through the account</li>
+            </ul>
+
+            <h3>4. Authorized use</h3>
+            <ul>
+              <li>do not attempt unauthorized access to third-party accounts or data</li>
+              <li>do not use the application to store unlawful content</li>
+              <li>do not disrupt the normal operation of the service</li>
+              <li>do not bypass implemented security measures</li>
+            </ul>
+
+            <h3>5. Liability</h3>
+            <p>
+              SiyarTy is a support tool for vehicle follow-up. The user remains responsible for entered data,
+              actual deadline tracking and compliance with administrative and technical obligations.
+            </p>
+
+            <h3>6. Availability and changes</h3>
+            <p>
+              The service may be interrupted, modified, improved or temporarily suspended for maintenance,
+              security or technical evolution.
+            </p>
+
+            <h3>7. Personal data</h3>
+            <p>
+              Personal data processing is governed by the SiyarTy Privacy Policy.
+            </p>
+
+            <h3>8. Contact</h3>
+            <p>
+              For any question related to the use of the service, users may contact the support channel linked
+              to SiyarTy.
+            </p>
+          </section>
+
+          <section class="locale-section rtl" id="ar">
+            <div class="locale-label">العربية</div>
+            <h2>الشروط العامة للاستخدام</h2>
+
+            <p>
+              تحدد هذه الشروط القواعد الخاصة بالوصول إلى تطبيق SiyarTy واستخدامه.
+            </p>
+
+            <h3>1. الغرض</h3>
+            <p>
+              SiyarTy هو تطبيق لإدارة المركبات يتيح متابعة الوثائق والوقود والمصاريف والتخطيط الوقائي والمرفقات المرتبطة بها.
+            </p>
+
+            <h3>2. القبول</h3>
+            <p>
+              باستخدام SiyarTy، يوافق المستخدم على هذه الشروط. وإذا لم يوافق عليها، فيجب عليه عدم استخدام التطبيق.
+            </p>
+
+            <h3>3. حساب المستخدم</h3>
+            <ul>
+              <li>يتحمل المستخدم مسؤولية صحة المعلومات التي يقدمها</li>
+              <li>يجب على المستخدم حماية سرية بيانات الدخول الخاصة به</li>
+              <li>يبقى المستخدم مسؤولا عن كل استخدام يتم عبر حسابه</li>
+            </ul>
+
+            <h3>4. الاستخدام المسموح</h3>
+            <ul>
+              <li>عدم محاولة الوصول غير المصرح به إلى حسابات أو بيانات الغير</li>
+              <li>عدم استخدام التطبيق لتخزين محتوى غير قانوني</li>
+              <li>عدم تعطيل التشغيل العادي للخدمة</li>
+              <li>عدم تجاوز إجراءات الأمان المعتمدة</li>
+            </ul>
+
+            <h3>5. المسؤولية</h3>
+            <p>
+              SiyarTy هو أداة مساعدة لمتابعة المركبة. ويبقى المستخدم مسؤولا عن صحة البيانات المدخلة وعن المتابعة الفعلية
+              للمواعيد والالتزامات الإدارية والتقنية.
+            </p>
+
+            <h3>6. التوفر والتطوير</h3>
+            <p>
+              قد يتم إيقاف الخدمة أو تعديلها أو تحسينها أو تعليقها مؤقتا لأسباب تتعلق بالصيانة أو الأمان أو التطوير التقني.
+            </p>
+
+            <h3>7. البيانات الشخصية</h3>
+            <p>
+              تخضع معالجة البيانات الشخصية لسياسة الخصوصية الخاصة بـ SiyarTy.
+            </p>
+
+            <h3>8. التواصل</h3>
+            <p>
+              لأي سؤال يتعلق باستخدام الخدمة، يمكن للمستخدم التواصل عبر قناة الدعم المرتبطة بـ SiyarTy.
+            </p>
+          </section>
         </div>
+
+        <footer class="foot">
+          <div>Application: SiyarTy</div>
+          <div>
+            Cette page peut etre publiee comme document public de conditions d'utilisation pour l'application.
+          </div>
+        </footer>
       </main>
     </div>
   </body>
